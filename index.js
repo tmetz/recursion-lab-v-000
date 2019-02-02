@@ -17,6 +17,6 @@ function reverseString(myString) {
   }
   else {
     let mySubString = myString.substring(0, myString.length - 2);
-    return reverseString(mySubString);
+    return reverseString(mySubString) + myString.substring(0,1);
   }
 }
