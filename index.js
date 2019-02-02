@@ -53,3 +53,20 @@ function maxOf(myArr) {
     }
   }
 }
+
+function includesNumber(myArr, testNum) {
+  if (myArr.length == 1) {
+    if (myArr[0] == testNum) {
+      return true;
+    }
+  }
+  else {
+    if (myArr[0] == testNum) {
+      return true;
+    }
+    else if includesNumber(myArr.slice(1, myArr.length - 1), testNum) {
+      return true;
+    }
+  }
+  return false;
+}
