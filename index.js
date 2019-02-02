@@ -20,3 +20,12 @@ function reverseString(myString) {
     return reverseString(mySubString) + myString.substring(0,1);
   }
 }
+
+function isPalindrome(myString) {
+  if (myString == reverseString(myString)) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
