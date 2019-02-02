@@ -67,7 +67,7 @@ function includesNumber(myArr, testNum) {
     if (myArr[0] == testNum) {
       return true;
     }
-    else return (includesNumber(myArr.slice(1, myArr.length - 1), testNum)) {
+    else return (includesNumber(myArr.slice(1, myArr.length - 1), testNum)) 
   }
   return false;
 }
