@@ -22,8 +22,11 @@ function reverseString(myString) {
 }
 
 function isPalindrome(myString) {
-  if (myString == reverseString(myString)) {
+  if (myString.length < 2) {
     return true;
+  }
+  else if (myString[myString.length - 1] === myString[0]) {
+    return isPalindrome(myString.substring(1, myString.length - 1));
   }
   else {
     return false;
