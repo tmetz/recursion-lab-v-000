@@ -35,6 +35,6 @@ function addUpTo(myArr, myIndex) {
     return myArr[0];
   }
   else {
-    return myArr[myIndex] + addUpTo(myArr.slice(0, myIndex - 1), myIndex - 1);
+    return myArr[myIndex] + addUpTo(myArr.slice(0, myIndex), myIndex - 1);
   }
 }
