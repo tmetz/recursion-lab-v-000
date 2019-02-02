@@ -29,3 +29,12 @@ function isPalindrome(myString) {
     return false;
   }
 }
+
+function addUpTo(myArr[], myIndex) {
+  if (myArr.length == 1) {
+    return myArr[0];
+  }
+  else {
+    return myArr[myIndex] + addUpTo(myArr.slice(0, myIndex - 1), myIndex - 1);
+  }
+}
