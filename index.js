@@ -64,5 +64,4 @@ function includesNumber(myArr, testNum) {
   else {
     return (includesNumber(myArr.slice(1), testNum))
   }
-  return false;
 }
