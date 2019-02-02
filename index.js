@@ -38,3 +38,18 @@ function addUpTo(myArr, myIndex) {
     return myArr[myIndex] + addUpTo(myArr.slice(0, myIndex), myIndex - 1);
   }
 }
+
+function maxOf(myArr) {
+  if (myArr.length == 1) {
+    return myArr[0];
+  }
+  else {
+    let nextNum = maxOf(myArr.slice(1, myArr.length));
+    if (myArr[0] > nextNum) {
+      return myArr[0];
+    }
+    else {
+      return nextNum;
+    }
+  }
+}
