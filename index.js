@@ -55,21 +55,14 @@ function maxOf(myArr) {
 }
 
 function includesNumber(myArr, testNum) {
-  if (myArr.length == 1) {
-    if (myArr[0] == testNum) {
-      return true;
-    }
-    else {
-      return false;
-    }
+  if (!myArr.length) {
+    return false;
+  }
+  else if (myArr[0] == testNum) {
+    return true;
   }
   else {
-    if (myArr[0] == testNum) {
-      return true;
-    }
-    else {
-      return (includesNumber(myArr.slice(1, myArr.length - 1), testNum))
-    }
+    return (includesNumber(myArr.slice(1), testNum))
   }
   return false;
 }
